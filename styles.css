@@ -118,7 +118,20 @@
     font-family: "triforce", monospace;
     font-size: 90px;
     text-shadow: 2px 1px white;
-}
+    animation: fade-in-animation 3s ease-in forwards;
+    opacity: 0; /* Initially hide the element */
+  }
+  
+
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* Gradually fade in to opacity 1 */
+    }
+  }
+  
 
 .paragraph {
     font-family: 'Open Sans', sans-serif;
