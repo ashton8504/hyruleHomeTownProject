@@ -29,14 +29,36 @@
     
   }
   
-
-  
   img {
     width: 100px;
   }
 
+/* Styles for Navbar */
 
-  /* Styles for the Header Section */
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #3D6AA2;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.navbar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar li a:hover {
+  background-color: #0080FF;
+}
+
   
 /* Styles for the Header Section */
 
@@ -162,8 +184,6 @@
     text-align: center;
 }
 
-  
-  
   /* Styles for Activities Section */
   .activitiesHeader {
     background: linear-gradient(to top, #0B64C8, #F1FAEE);
@@ -231,8 +251,6 @@
   a:hover {
     color: #284157;
   }
-
-  
 
   /* Guide Section */
   
@@ -344,3 +362,17 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar li {
+      margin: 10px 0;
+    }
+  
+    .character-card {
+      flex-basis: 100%; /* Make the cards take full width on smaller screens */
+    }
+  }
