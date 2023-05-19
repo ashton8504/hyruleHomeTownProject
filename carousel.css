@@ -38,17 +38,18 @@ body {
   }
   
   .character-card h3 {
-    font-size: 18px;
+    font-size: 22px;
     margin-bottom: 5px;
     color: #284157;
     text-shadow: 1px 1px white;
   }
   
   .character-card p {
-    font-size: 14px;
+    font-size: 18px;
     color: #ffffff;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
+  
   
   @media (max-width: 768px) {
     .navbar {
