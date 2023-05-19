@@ -313,3 +313,24 @@
     font-size: 20px;
   }
 }
+
+/* Media query for screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .heroSection {
+      height: auto;
+    }
+
+    .heading:hover {
+      font-size: 80px; /* Adjust the font size for mobile devices */
+      transform: scale(1.05); /* Adjust the scale value for mobile devices */
+    }
+    
+    .triforce {
+      font-size: 70px;
+    }
+    
+    .paragraph {
+      font-size: 18px;
+    }
+  }
+  
