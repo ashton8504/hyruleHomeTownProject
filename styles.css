@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: 'zelda';
+    src: url('zeldaFont.otf') format('opentype');
+  }
+  
+  @font-face {
+    font-family: 'retro';
+    src: url('retroFont.ttf') format('opentype');
+  }
+  
+  body {
+    margin: 0;
+    text-align: center;
+    font-family: 'retro', Courier, monospace;
+  }
+  
+  img {
+    width: 100px;
+  }
+  
+  /* Styles for the Header Section */
+  
+  .heroSection {
+    background-image: url('images/hyrule.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #ECF4FF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'zelda', sans-serif;
+    text-shadow: 1px 2px #000000;
+  }
+  
+  .heroSection h1,
+  .heroSection h2 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Styles for Activities Section */
+  .activitiesHeader {
+    background: linear-gradient(to top, #0B64C8, #F1FAEE);
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .activitiesSection {
+    background: linear-gradient(to bottom, #0B64C8, #F1FAEE);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+  }
+  
+  .activityImgWrapper {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .activityImg {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+  }
+  
+  .activityImg {
+    transition: transform 0.3s ease;
+  }
+  
+  .activityImg:hover {
+    transform: scale(1.2);
+  }
+  
+  .activitiesHeader,
+  .activitiesSection {
+    transition: background-color 0.3s ease;
+  }
+  
+  .activitiesHeader:hover,
+  .activitiesSection:hover {
+    background-color: #457B9D;
+  }
+  
+  
+  .activityCaption {
+    text-align: center;
+    font-size: 12px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+  }
+  
+  a:hover {
+    color: #A8DADC;
+  }
+
+
+  /* Guide Section */
+  
+  .guideSection {
+    text-align: center;
+    padding: 20px;
+    background-color: #F1FAEE;
+  }
+  
+  .guideHeader {
+    font-size: 24px;
+    color: #457B9D;
+    margin-bottom: 10px;
+  }
+  
+  .guideDescription {
+    font-size: 16px;
+    color: #1D3557;
+    margin-bottom: 10px;
+  }
+  
+  .guideName {
+    font-size: 18px;
+    color: #457B9D;
+    margin-bottom: 10px;
+    transition: font-size 1.9s ease;
+    cursor: pointer;
+  }
+  
+  .guideName:hover {
+    font-size: 20px;
+  }
+  
+  .guideName::after {
+    content: "Click me";
+    font-size: 12px;
+    color: #1D3557;
+    display: block;
+  }
+  
+  
+  .guideImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #3976e6;
+  }
+  
+  .guideImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 3px solid #3976e6;
+    transition: transform 0.3s ease;
+  }
+  
+  .guideImage:hover {
+    transform: rotate(360deg);
+  }
+  
+  .guideImage:hover::after {
+    content: url('./images/hyruleMap.jpeg'); /* Replace 'images/newImage.jpg' with the path to your new image */
+  }
+  
+
+  .miniBio {
+    display: none;
+  }
+  
