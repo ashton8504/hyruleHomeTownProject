@@ -37,7 +37,10 @@
 
   /* Styles for the Header Section */
   
-  .heroSection {
+/* Styles for the Header Section */
+
+.heroSection {
+    position: relative;
     background-image: url('images/hyrule.jpeg');
     background-size: cover;
     background-position: center top;
@@ -50,29 +53,46 @@
     justify-content: center;
     align-items: center;
     font-family: 'zelda', sans-serif;
-    text-shadow: 1px 2px white;
+    text-shadow: 1px 2px rgb(16, 16, 16);
     height: 100vh; /* Ensure the hero section fills the viewport height */
     font-size: 30px;
-  }
+}
 
-  .triforce{
+.heroSection:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('images/hyrule.jpeg');
+    background-size: cover;
+    opacity: 0.6; /* Adjust the opacity to your preference */
+    z-index: -1;
+}
+
+.triforce {
     font-family: "triforce", monospace;
     font-size: 90px;
     text-shadow: 2px 1px white;
-  }
-  
-  .paragraph{
+}
+
+.paragraph {
     font-family: 'Open Sans', sans-serif;
-    text-shadow: 1px 1px  white;
-  }
-  
-  
-  .heroSection h1,
-  .heroSection h2 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: rgb(245, 245, 245); /* Set the text color to white for better visibility */
+    position: relative;
+    z-index: 1;
+}
+
+.heroSection h1,
+.heroSection h2 {
     margin: 0;
     padding: 10px;
     text-align: center;
-  }
+}
+
+  
   
   /* Styles for Activities Section */
   .activitiesHeader {
