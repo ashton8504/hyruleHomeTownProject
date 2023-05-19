@@ -113,6 +113,11 @@
     100% { color: black; }
   }
   
+  .color-transition {
+    animation: colorTransition 3s infinite;
+  }
+  
+  
   
   /* Media query for screens with a maximum width of 480px (most smartphones) */
   @media (max-width: 480px) {

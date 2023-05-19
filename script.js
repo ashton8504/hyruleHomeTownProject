@@ -41,12 +41,11 @@ activityImageWrappers.forEach((activityImageWrapper, index) => {
 
 
 const heading = document.querySelector('.heading');
-const text = heading.textContent;
-const letters = text.split('');
 
-heading.innerHTML = '';
-letters.forEach((letter) => {
-    const span = document.createElement('span');
-    span.textContent = letter;
-    heading.appendChild(span);
+heading.addEventListener('mouseover', () => {
+    heading.classList.add('color-transition');
+});
+
+heading.addEventListener('mouseout', () => {
+    heading.classList.remove('color-transition');
 });
