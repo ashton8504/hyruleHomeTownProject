@@ -124,7 +124,7 @@
 .triforce {
     font-family: "triforce", monospace;
     font-size: 90px;
-    text-shadow: 2px 1px white;
+    text-shadow: 1px 1px white;
     animation: fade-in-animation 3s ease-in forwards;
     opacity: 0; /* Initially hide the element */
   }
