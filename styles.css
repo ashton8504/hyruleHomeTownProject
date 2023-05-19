@@ -97,23 +97,30 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     font-size: 150px;
     transform: scale(1.1);
-}
-
-.heading:hover span {
+  }
+  
+  .heading:hover span {
     transition: color 0.5s ease-in-out;
     animation: colorTransition 3s infinite;
-}
-
-
-@keyframes colorTransition {
+  }
+  
+  @keyframes colorTransition {
     0% { color: #0B64C8; }
     20% { color: #F3722C; }
     40% { color: #FFC300; }
     60% { color: #3EB595; }
     80% { color: #0074D9; }
     100% { color: black; }
-}
-
+  }
+  
+  /* Media query for screens with a maximum width of 480px (most smartphones) */
+  @media (max-width: 480px) {
+    .heading:hover {
+      font-size: 100px; /* Adjust the font size for mobile devices */
+      transform: scale(1.05); /* Adjust the scale value for mobile devices */
+    }
+  }
+  
 .triforce {
     font-family: "triforce", monospace;
     font-size: 90px;
