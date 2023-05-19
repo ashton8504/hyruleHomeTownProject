@@ -50,7 +50,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'zelda', sans-serif;
-    text-shadow: 1px 2px #bcbcbc;
+    text-shadow: 1px 2px white;
     height: 100vh; /* Ensure the hero section fills the viewport height */
     font-size: 30px;
   }
@@ -63,6 +63,7 @@
   
   .paragraph{
     font-family: 'Open Sans', sans-serif;
+    text-shadow: 1px 1px  white;
   }
   
   
