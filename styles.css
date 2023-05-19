@@ -193,3 +193,21 @@
     color: #284157;
   }
   
+
+  /* Styles for screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+  .activitiesSection {
+    flex-direction: column;
+  }
+
+  .activityImgWrapper {
+    margin: 10px auto;
+  }
+}
+
+/* Styles for screens with a maximum width of 480px (most smartphones) */
+@media (max-width: 480px) {
+  .heroSection {
+    font-size: 20px;
+  }
+}
