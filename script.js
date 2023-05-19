@@ -38,3 +38,15 @@ activityImageWrappers.forEach((activityImageWrapper, index) => {
         activityImage.setAttribute('src', originalImageSrc);
     });
 });
+
+
+const heading = document.querySelector('.heading');
+const text = heading.textContent;
+const letters = text.split('');
+
+heading.innerHTML = '';
+letters.forEach((letter) => {
+    const span = document.createElement('span');
+    span.textContent = letter;
+    heading.appendChild(span);
+});

@@ -71,6 +71,49 @@
     z-index: -1;
 }
 
+.heading {
+    font-size: 100px;
+    position: relative;
+    transition: all 0.7s ease-in-out;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 50%;
+    background-color: #f9e000;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+}
+
+
+.heading:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    font-size: 150px;
+    transform: scale(1.1);
+}
+
+.heading:hover span {
+    transition: color 0.5s ease-in-out;
+    animation: colorTransition 3s infinite;
+}
+
+
+@keyframes colorTransition {
+    0% { color: #0B64C8; }
+    20% { color: #F3722C; }
+    40% { color: #FFC300; }
+    60% { color: #3EB595; }
+    80% { color: #0074D9; }
+    100% { color: black; }
+}
+
 .triforce {
     font-family: "triforce", monospace;
     font-size: 90px;
