@@ -12,7 +12,7 @@ guideImage.addEventListener('mouseover', () => {
     if (newImageSrc) {
         guideImage.setAttribute('src', newImageSrc);
     }
-});
+});   
 
 guideImage.addEventListener('mouseout', () => {
     const originalImageSrc = guideImage.getAttribute('src');
