@@ -11,6 +11,16 @@
     font-family: 'retro';
     src: url('retroFont.ttf') format('opentype');
   }
+
+  @font-face {
+    font-family: 'triforce';
+    src: url('triforce.ttf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'zeldaFont';
+    src: url('Zelda_Demo.ttf') format('opentype');
+  }
   
   body {
     margin: 0;
@@ -44,8 +54,16 @@
     height: 100vh; /* Ensure the hero section fills the viewport height */
     font-size: 30px;
   }
+
+  .triforce{
+    font-family: "triforce", monospace;
+    font-size: 90px;
+    text-shadow: 2px 1px white;
+  }
   
-  
+  .paragraph{
+    font-family: 'Open Sans', sans-serif;
+  }
   
   
   .heroSection h1,
