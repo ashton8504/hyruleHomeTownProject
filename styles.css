@@ -105,13 +105,14 @@
   }
   
   @keyframes colorTransition {
-    0% { color: #0B64C8; }
-    20% { color: #F3722C; }
-    40% { color: #FFC300; }
-    60% { color: #3EB595; }
-    80% { color: #0074D9; }
+    0% { color: #3D6AA2; } /* Zelda Blue */
+    20% { color: #C83E20; } /* Zelda Red */
+    40% { color: #FFD700; } /* Zelda Gold */
+    60% { color: #228B22; } /* Zelda Green */
+    80% { color: #0080FF; } /* Zelda Sky Blue */
     100% { color: black; }
   }
+  
   
   /* Media query for screens with a maximum width of 480px (most smartphones) */
   @media (max-width: 480px) {
