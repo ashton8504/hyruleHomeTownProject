@@ -8,63 +8,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="parallax.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js" defer></script>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Visit Hyrule</title>
 </head>
 
 <body>
-    <!-- HERO SECTION -->
-<div class="parallax-container">
-    
-<div class="heroSection">
-    <h1 class="title heading">Visit Hyrule</h1>
-    <h2 class="triforce">@ % @</h2>
-    <h2 class="paragraph">Embark on a legendary journey through the captivating land of Hyrule in the world of Zelda, a sprawling realm brimming with stunning landscapes, ancient ruins, majestic castles, and perilous dungeons, where heroism and adventure intertwine in an unforgettable epic.</h2>
-</div>
+        <!-- HERO SECTION -->
+    <div class="heroSection">
+        <div data-aos="zoom-in">
+        <h1 class="title heading">Visit Hyrule</h1>
+        </div>
+        <h2 class="triforce">@ % @</h2>
+        <h2 class="paragraph">Embark on a legendary journey through the captivating land of Hyrule in the world of Zelda, a sprawling realm brimming with stunning landscapes, ancient ruins, majestic castles, and perilous dungeons, where heroism and adventure intertwine in an unforgettable epic.</h2>
+    </div>
 
-<!-- ACTIVITIES SECTION -->
-<h3 class="activitiesHeader">Top three activities to do in the Hyrule Kingdom</h3>
-<div class="activitiesSection">
-    <div class="activityImgWrapper activityImgWrapper1">
-        <img class="activityImg activityImg1" src="images/hyruleCastle.jpeg" data-alt-src="images/hyruleCastleNew.jpeg">
-        <h4>
-            <a href="https://zelda.fandom.com/wiki/Hyrule_Castle" target="_blank" alt="Photo of Hyrule">Hyrule Castle</a>
-        </h4>
-        <p class="activityCaption">
-            A majestic fortress situated at the heart of the kingdom.
-        </p>
-    </div>
-    <div class="activityImgWrapper activityImgWrapper2">
-        <img class="activityImg activityImg2" src="images/kakrikoVillage.jpeg" data-alt-src="images/kakrikoVillageNew.jpeg">
-        <h4>
-            <a href="https://zelda.fandom.com/wiki/Kakariko_Village" target="_blank" alt="Photo of Kakriko Village">Kakariko Village</a>
-        </h4>
-        <p class="activityCaption">
-            Kakariko Village, a charming settlement nestled amidst the rolling hills of Hyrule.
-        </p>
-    </div>
-    <div class="activityImgWrapper activityImgWrapper3">
-        <img class="activityImg activityImg3" src="images/lostWoods.jpeg" alt="Photo of the Lost Woods" data-alt-src="images/lostWoodsNew.jpeg">
-        <h4>
-            <a href="https://zelda.fandom.com/wiki/Lost_Woods" target="_blank">Lost Woods</a>
-        </h4>
-        <p class="activityCaption">
-            The Lost Woods, an enigmatic and mystical forest shrouded in an aura of mystery.
-        </p>
-    </div>
-</div>
+    <!-- ACTIVITIES SECTION -->
 
 
-  <!-- GUIDE SECTION -->
-<div class="guideSection">
-    <h3 class="guideHeader">Your guide Link</h3>
-    <p class="guideDescription">"I have lived in Hyrule my entire life, constantly questing and saving Princess Zelda on the regular. I can show you all of its best parts and hidden secrets."</p>
-    <img class="guideImage" src="images/link.jpg" alt="Photo of Link" data-alt-src="images/thumbsUp.gif" alt="Link Giving a Thumbs up">
-    <p class="miniBio">Mini Bio: Link is a legendary hero in the land of Hyrule, known for his courage and determination to save Princess Zelda from evil forces. He has embarked on countless adventures and has mastered various weapons and abilities to overcome challenges and protect the kingdom.</p>
-    <h4 class="guideName" alt="Photo of Link"></h4>
-</div>
-</div>
+    <h3 class="activitiesHeader">Top three activities to do in the Hyrule </h3>
+    <div class="activitiesSection">
+        <div class="activityImgWrapper activityImgWrapper1">
+            <div data-aos="fade-right">
+            <img class="activityImg activityImg1" src="images/hyruleCastle.jpeg" data-alt-src="images/hyruleCastleNew.jpeg">
+            <h4>
+                <a href="https://zelda.fandom.com/wiki/Hyrule_Castle" target="_blank" alt="Photo of Hyrule">Hyrule Castle</a>
+            </h4>
+            <p class="activityCaption">
+                A majestic fortress situated at the heart of the kingdom.
+            </p>
+        </div>
+    </div>
+    <div data-aos="fade-down">
+        <div class="activityImgWrapper activityImgWrapper2">
+            <img class="activityImg activityImg2" src="images/kakrikoVillage.jpeg" data-alt-src="images/kakrikoVillageNew.jpeg">
+            <h4>
+                <a href="https://zelda.fandom.com/wiki/Kakariko_Village" target="_blank" alt="Photo of Kakriko Village">Kakariko Village</a>
+            </h4>
+            <p class="activityCaption">
+                Kakariko Village, a charming settlement nestled amidst the rolling hills of Hyrule.
+            </p>
+        </div>
+    </div>
+    <div data-aos="fade-left">
+        <div class="activityImgWrapper activityImgWrapper3">
+            <img class="activityImg activityImg3" src="images/lostWoods.jpeg" alt="Photo of the Lost Woods" data-alt-src="images/lostWoodsNew.jpeg">
+            <h4>
+                <a href="https://zelda.fandom.com/wiki/Lost_Woods" target="_blank">Lost Woods</a>
+            </h4>
+            <p class="activityCaption">
+                The Lost Woods, an enigmatic and mystical forest shrouded in an aura of mystery.
+            </p>
+        </div>
+    </div>
+    </div>
+
+    <!-- GUIDE SECTION -->
+    <div data-aos="fade-zoom-in"
+     data-aos-easing="ease-in-back"
+     data-aos-delay="300"
+     data-aos-offset="0">
+        <div class="guideSection">
+            <h3 class="guideHeader">Your guide Link</h3>
+            <p class="guideDescription">"I have lived in Hyrule my entire life, constantly questing and saving Princess Zelda on the regular. I can show you all of its best parts and hidden secrets."</p>
+            <img class="guideImage" src="images/link.jpg" alt="Photo of Link" data-alt-src="images/thumbsUp.gif" alt="Link Giving a Thumbs up">
+            <p class="miniBio">Mini Bio: Link is a legendary hero in the land of Hyrule, known for his courage and determination to save Princess Zelda from evil forces. He has embarked on countless adventures and has mastered various weapons and abilities to overcome challenges and protect the kingdom.</p>
+            <h4 class="guideName" alt="Photo of Link"></h4>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init();
+  </script>
 </body>
 </html>
