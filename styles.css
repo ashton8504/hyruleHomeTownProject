@@ -205,9 +205,8 @@
 
   .activityImgWrapper {
     text-align: center;
-    margin: 10px;
-    flex-basis: 33%; /* Adjust the width of each item based on the number of items per row */
-    max-width: 200px; /* Limit the maximum width of each item */
+    margin: 40px;
+    
   }
   
   .activityImg {
@@ -240,6 +239,8 @@
     text-align: center;
     color: #1D3557;
   }
+
+  
   
   a {
     text-decoration: none;
