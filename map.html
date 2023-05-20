@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="map.css">  
+    <link rel="stylesheet" href="map.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
@@ -17,8 +18,8 @@
 </head>
 
 <body>
-
-<!-- Navbar -->
+    
+    <!-- Navbar -->
     <nav>
         <ul class="navbar">
             <li><a href="index.html">Home</a></li>
@@ -27,16 +28,43 @@
             <li><a href="https://ashton-codes.com/">My Portfolio</a></li>
         </ul>
     </nav>
-
-    <div class="mapImage">
-        <img src="images/map.jpg" alt="Map of Hyrule" class="full-width">
-    </div>
     
+    <header>
+        <h1>Discover the Wonders of the Kingdom</h1>
+    </header>
+    <div class="mapImage">
+        <div data-aos="zoom-in">
+            <img src="images/map.jpg" alt="Map of Hyrule" class="full-width" loading="lazy">
+        </div>
+    </div>
 
-  
+    <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
+
+    <section>
+        <h2>About Hyrule</h2>
+        <div data-aos="zoom-out-down">
+            <p>
+                Hyrule, a mythical realm of wonder and adventure, captivates the imagination with its rich tapestry of landscapes and timeless tales. From the sprawling fields and majestic mountains to the enchanted forests and tranquil lakes, Hyrule is a land where heroes are born and destinies are forged. Ancient ruins and sacred temples hold secrets untold, while diverse races and mythical creatures coexist in harmony. Hyrule's essence lies in the spirit of exploration, the pursuit of wisdom, and the enduring battle between light and darkness. Step into this legendary kingdom, and immerse yourself in the allure of Hyrule's captivating beauty and timeless legends.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Visit Hyrule. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-    AOS.init();
-  </script>
+        AOS.init();
+    </script>
 </body>
+
 </html>

@@ -5,28 +5,107 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f5f5f5, #3E6BA3);
+    background: linear-gradient(to bottom, #81afda, #3E6BA3);
     font-family: 'retro', sans-serif;
   }
   
-
   .mapImage {
-    max-width: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 0px;
+    overflow: hidden;
   }
   
   .responsive-image {
     max-width: 100%;
-    height: auto;
+    max-height: 80vh;
     display: block;
     object-fit: contain;
-    max-height: 80vh;
+    transition: transform 0.3s ease;
   }
-.full-width {
+  
+  .full-width {
     width: 100%;
-}
+  }
+  
+  h1, h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  p {
+    padding: 20px;
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+  }
+
+  #scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ebebeb;
+    color: #000000;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #2D528B;
+  }
+  
+  footer {
+    background-color: #3E6BA3;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  .mapImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; /* Adjust the value as needed */
+    overflow: hidden;
+  }
+  
+  @media (max-width: 767px) {
+    .mapImage {
+      padding-top: 20px; /* Adjust the value as needed */
+    }
+  }
+  
+  
