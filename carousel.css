@@ -62,9 +62,10 @@ body {
   
   .character-card p {
     font-size: 18px;
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: black;
+    text-shadow: 1px 1px 1px white;
   }
+  
   
   
   @media (max-width: 768px) {
