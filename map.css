@@ -10,21 +10,23 @@ body {
   }
   
 
-.mapImage {
+  .mapImage {
     max-width: 100%;
     overflow: hidden;
     margin: 0;
     padding: 0;
-}
-
-
-.responsive-image {
-    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .responsive-image {
+    max-width: 100%;
     height: auto;
     display: block;
-}
-
-
+    object-fit: contain;
+    max-height: 80vh;
+  }
 .full-width {
     width: 100%;
 }
