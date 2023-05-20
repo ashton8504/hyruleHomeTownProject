@@ -49,3 +49,6 @@ heading.addEventListener('mouseover', () => {
 heading.addEventListener('mouseout', () => {
     heading.classList.remove('color-transition');
 });
+
+
+// Logic for map
