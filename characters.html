@@ -148,10 +148,18 @@
             <!-- Add more character cards if needed -->
         
    
-
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
 </body>
 </html>

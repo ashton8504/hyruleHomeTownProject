@@ -25,7 +25,7 @@
                 <li><a href="https://ashton-codes.com/">My Portfolio</a></li>
             </ul>
         </nav>
-    
+        
         <!-- HERO SECTION -->
     <div class="heroSection">
         <div data-aos="zoom-in">
@@ -93,9 +93,18 @@
             <h4 class="guideName" alt="Photo of Link"></h4>
         </div>
     </div>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
   </script>
+  <button id="scrollToTopBtn" onclick="scrollToTop()">&#8593;</button>
 </body>
 </html>

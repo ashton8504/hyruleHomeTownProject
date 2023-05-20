@@ -49,8 +49,10 @@ body {
 
   p {
     padding: 20px;
-    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    color: #fff; /* Set the font color to white */
+    text-shadow: 1px 1px 1px rgb(0, 0, 0); /* Adjust the text shadow as needed */
   }
+  
 
   #scrollToTopBtn {
     position: fixed;
