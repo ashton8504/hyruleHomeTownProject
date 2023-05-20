@@ -62,6 +62,7 @@
   
 /* Styles for the Header Section */
 
+/* Styles for the Header Section */
 .heroSection {
     position: relative;
     background-image: url('images/hyrule.jpeg');
@@ -79,9 +80,10 @@
     text-shadow: 1px 2px rgb(255, 255, 255);
     height: 100vh; /* Ensure the hero section fills the viewport height */
     font-size: 30px;
-}
-
-.heroSection:before {
+    padding-top: 70px; /* Add top padding to create space for the navbar */
+  }
+  
+  .heroSection:before {
     content: "";
     position: absolute;
     top: 0;
@@ -92,15 +94,17 @@
     background-size: cover;
     opacity: 0.6; /* Adjust the opacity to your preference */
     z-index: -1;
-}
-
-.heading {
+  }
+  
+  .heading {
     font-size: 100px;
     position: relative;
+    max-width: 100%;
+    word-wrap: break-word;
     transition: all 0.7s ease-in-out;
-}
-
-.heading::before {
+  }
+  
+  .heading::before {
     content: '';
     position: absolute;
     top: -10px;
@@ -113,20 +117,19 @@
     pointer-events: none;
     transition: opacity 0.3s ease-in-out;
     z-index: -1;
-}
-
-
-.heading:hover {
+  }
+  
+  .heading:hover {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     font-size: 150px;
     transform: scale(1.1);
+    padding-top: 50px; /* Adjust the top padding when hovering to create space for the navbar */
   }
   
   .heading:hover span {
     transition: color 0.5s ease-in-out;
     animation: colorTransition 3s infinite;
   }
-  
   @keyframes colorTransition {
     0% { color: #3D6AA2; } /* Zelda Blue */
     20% { color: #C83E20; } /* Zelda Red */
@@ -140,6 +143,16 @@
     animation: colorTransition 3s infinite;
   }
   
+  /* Media query for screens with a maximum width of 768px (tablets and smaller) */
+@media (max-width: 768px) {
+    .heroSection {
+      padding-top: 100px; /* Increase the top padding to create more space for the navbar */
+    }
+  
+    .heading:hover {
+      padding-top: 0; /* Reset the top padding when hovering for better alignment on smaller screens */
+    }
+  }
   
   
   /* Media query for screens with a maximum width of 480px (most smartphones) */
