@@ -51,4 +51,20 @@ heading.addEventListener('mouseout', () => {
 });
 
 
-// Logic for map
+// Logic for scroll button
+
+window.addEventListener("scroll", function() {
+    var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    if (window.pageYOffset > (document.documentElement.scrollHeight - window.innerHeight) / 2) {
+        scrollToTopBtn.classList.add("show");
+    } else {
+        scrollToTopBtn.classList.remove("show");
+    }
+});
+
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}

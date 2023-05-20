@@ -356,11 +356,19 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  #scrollToTopBtn:hover {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#scrollToTopBtn:hover {
     background-color: #2D528B;
-  }
+}
+
 
   /* Styles for screens with a maximum width of 768px (tablets and smaller) */
 @media (max-width: 768px) {
